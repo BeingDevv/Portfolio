@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <title>Manik - Developer Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -165,11 +165,11 @@
 
     <script>
         function scrollToClass(event) {
-            event.preventDefault(); // Prevents the link from refreshing the page
-            const element = document.querySelector(".secondSection"); // Selects the section
+            event.preventDefault();
+            const element = document.querySelector(".secondSection"); 
             if (element) {
                 element.scrollIntoView({
-                    behavior: "smooth" // Enables smooth scrolling effect
+                    behavior: "smooth"
                 });
             } else {
                 console.error("Element with class '.secondSection' not found!");
